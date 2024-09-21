@@ -1,4 +1,4 @@
-<!-- /* From Uiverse.io by NlghtM4re */ 
+/* From Uiverse.io by NlghtM4re */ 
 <div id="loader">
    
   <div class="ls-particles ls-part-1"></div>
@@ -740,4 +740,4 @@
     transform: rotateZ(65deg) translateY(-35px);
   }
 }
-</style> -->
+</style>
