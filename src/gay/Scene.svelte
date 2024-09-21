@@ -8,8 +8,11 @@
 
   export let billboarding = true
   export let fps: number
-
-  const grass = useTexture('/textures/grass.png', {
+   
+  const skyurl_swift = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/tyalor/pixel-sky.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL3R5YWxvci9waXhlbC1za3kucG5nIiwiaWF0IjoxNzI1MDE2MTIxLCJleHAiOjE3NTY1NTIxMjF9.nD2TSaPHvqBDN1I5ljeWIhXaGgtlP21pBJolacXORzk&t=2024-08-30T11%3A08%3A33.781Z"
+  
+  const grassurl_swift = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/tyalor/grass.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL3R5YWxvci9ncmFzcy5wbmciLCJpYXQiOjE3MjUwMTQ1NTUsImV4cCI6MTc1NjU1MDU1NX0.Sx49NC5hEN7S21vMweGug7wqAtCJTTybJZzJyq5Jy_0&t=2024-08-30T10%3A42%3A28.408Z"
+  const grass = useTexture(grassurl_swift, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(100, 100)
@@ -20,7 +23,7 @@
     }
   })
 
-  const sky = useTexture('/textures/pixel-sky.png', {
+  const sky = useTexture(skyurl_swift, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(10, 2)

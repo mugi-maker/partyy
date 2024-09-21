@@ -13,10 +13,10 @@
     <!-- <PerfMonitor /> -->
 
     <T.PerspectiveCamera
-      makeDefault
-      position.z={-80}
-      position.y={10}
-      position.x={10}
+    makeDefault
+    position.z={-80}
+    position.y={10}
+    position.x={10}
     >
       <OrbitControls />
     </T.PerspectiveCamera>

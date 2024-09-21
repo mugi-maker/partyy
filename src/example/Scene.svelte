@@ -9,7 +9,10 @@
   export let billboarding = true
   export let fps: number
 
-  const grass = useTexture('/textures/grass.png', {
+  const jack_sky_url = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/jack/bgs.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2phY2svYmdzLnBuZyIsImlhdCI6MTcyNTAxNjU1OCwiZXhwIjoxNzU2NTUyNTU4fQ.9BF3cPq6-c88Ow5eRhuDINTFdVGT7HtSb2SBvbLGt8U&t=2024-08-30T11%3A15%3A50.891Z"
+  const jack_ground_url = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/jack/gr.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2phY2svZ3IucG5nIiwiaWF0IjoxNzI1MDE2NTM1LCJleHAiOjE3NTY1NTI1MzV9.C34yZn3caOzhvteCh1u6qEyaukEHpu5tLEjFIheuj0s&t=2024-08-30T11%3A15%3A28.407Z"
+
+  const grass = useTexture(jack_ground_url, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(100, 100)
@@ -20,7 +23,7 @@
     }
   })
 
-  const sky = useTexture('/textures/pixel-sky.png', {
+  const sky = useTexture(jack_sky_url, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(10, 2)
@@ -49,9 +52,14 @@
 
 <!-- SCENE SETUP: grass, sky, lights -->
 
+
+
+
+
+
 {#if $sky}
   <T.Mesh
-    position.y={-10}
+    position.y={-20}
     scale.y={0.5}
   >
     <T.SphereGeometry args={[110]} />

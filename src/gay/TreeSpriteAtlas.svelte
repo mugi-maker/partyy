@@ -16,7 +16,7 @@
 
   const treeAtlasMeta = [
     {
-      url: '/textures/trees-pixelart.png',
+      url: 'https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/tyalor/trees-pixelart.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL3R5YWxvci90cmVlcy1waXhlbGFydC5wbmciLCJpYXQiOjE3MjUwMTQ3NTEsImV4cCI6MTc1NjU1MDc1MX0._IwwcbAieRexev8rui_7AWgjyeK7-VZVNS-Qyg7gj50&t=2024-08-30T10%3A45%3A44.247Z',
       type: 'rowColumn',
       width: 8,
       height: 3,
