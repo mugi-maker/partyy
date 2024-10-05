@@ -1,4 +1,4 @@
-<div class="logo"><b>@on<span>ly</span>.<span>mj</span>s</b></div>
+<div class="logo"><b>@on<span>ly</span>.<span>sc</span>00</b></div>
 
 
 <!-- <a href="https://twitter.com/nodws" id="btn-twtr" target="_b">Follow me on Twitter</a> -->
@@ -22,7 +22,7 @@
   margin-bottom: -110px;
   font: 1 10vh "Vibur";
   color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #00f7ff, 0 0 0.5em #00f7ff, 0 0 0.1em #00f7ff, 0 10px 3px #000;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8800, 0 0 0.5em #ff7300, 0 0 0.1em #ff7300, 0 10px 3px #000;
 }
 .logo b span{
   size: 10px;

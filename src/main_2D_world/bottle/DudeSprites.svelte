@@ -20,7 +20,7 @@
 {#await player then spritesheet}
   <InstancedSprite
     {spritesheet}
-    count={1000}
+    count={1}
     playmode={'FORWARD'}
     {fps}
     {billboarding}

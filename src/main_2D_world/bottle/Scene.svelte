@@ -5,14 +5,15 @@
   import { DEG2RAD } from 'three/src/math/MathUtils.js'
   import TreeSpriteAtlas from './TreeSpriteAtlas.svelte'
   import DudeSprites from './DudeSprites.svelte'
+  
 
   export let billboarding = true
   export let fps: number
-
-  const jack_sky_url = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/jack/bgs.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2phY2svYmdzLnBuZyIsImlhdCI6MTcyNTAxNjU1OCwiZXhwIjoxNzU2NTUyNTU4fQ.9BF3cPq6-c88Ow5eRhuDINTFdVGT7HtSb2SBvbLGt8U&t=2024-08-30T11%3A15%3A50.891Z"
-  const jack_ground_url = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/jack/gr.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2phY2svZ3IucG5nIiwiaWF0IjoxNzI1MDE2NTM1LCJleHAiOjE3NTY1NTI1MzV9.C34yZn3caOzhvteCh1u6qEyaukEHpu5tLEjFIheuj0s&t=2024-08-30T11%3A15%3A28.407Z"
-
-  const grass = useTexture(jack_ground_url, {
+   
+  const skyurl_swift = "https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/bottle/4a973fec-38b4-4f96-93be-82bf35017b38.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2JvdHRsZS80YTk3M2ZlYy0zOGI0LTRmOTYtOTNiZS04MmJmMzUwMTdiMzgucG5nIiwiaWF0IjoxNzI3ODA0MTIyLCJleHAiOjE3NTkzNDAxMjJ9.bRY61fR9_m5hBEG0W4lVL8U3SAszo3y7Jj15JhdQ9i8&t=2024-10-01T17%3A35%3A15.289Z"
+  
+  const grassurl_swift = "https://thumbs.dreamstime.com/b/d-brick-gray-wall-texture-assets-game-pixel-art-d-brick-gray-wall-texture-assets-game-pixel-art-gray-stone-concrete-329602346.jpg"
+  const grass = useTexture(grassurl_swift, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(100, 100)
@@ -23,7 +24,7 @@
     }
   })
 
-  const sky = useTexture(jack_sky_url, {
+  const sky = useTexture(skyurl_swift, {
     transform: (texture) => {
       texture.wrapS = texture.wrapT = RepeatWrapping
       texture.repeat.set(10, 2)
@@ -36,6 +37,8 @@
 </script>
 
 <slot />
+
+
 
 <!--
 	Dudes:
@@ -52,14 +55,9 @@
 
 <!-- SCENE SETUP: grass, sky, lights -->
 
-
-
-
-
-
 {#if $sky}
   <T.Mesh
-    position.y={-20}
+    position.y={-10}
     scale.y={0.5}
   >
     <T.SphereGeometry args={[110]} />
