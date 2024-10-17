@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "vite-svelte-ts-starter-test2",
   "private": true,
   "version": "0.0.0",

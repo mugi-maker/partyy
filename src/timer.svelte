@@ -3,7 +3,6 @@
 
   let targetDate = new Date('2024/12/05').getTime();
   let days = 30, hours = 2, minutes = 0, seconds = 0;
-
   function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
@@ -14,7 +13,7 @@
     minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // If the countdown is finished, reset values
+
     if (distance < 0) {
       clearInterval(interval);
       // Optionally, you can choose to display something else when the countdown is over
@@ -25,6 +24,13 @@
     }
   }
 
+
+  //#PURPLE
+function log() {
+  console.log("hello");
+}
+//#
+ 
   let interval;
 
   onMount(() => {

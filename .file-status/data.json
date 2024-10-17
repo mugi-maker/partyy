@@ -1,3 +1,16 @@
 {
-   "fileStatuses": []
+   "fileStatuses": [
+      {
+         "path": "d:\\CODE BASE\\working well skleton\\push to git\\WORKING WELL\\src\\dice.svelte",
+         "status": "inProgress"
+      },
+      {
+         "path": "d:\\CODE BASE\\working well skleton\\push to git\\WORKING WELL\\src\\finger.svelte",
+         "status": "inProgress"
+      },
+      {
+         "path": "d:\\CODE BASE\\working well skleton\\push to git\\WORKING WELL\\src\\fotter.svelte",
+         "status": "inProgress"
+      }
+   ]
 }

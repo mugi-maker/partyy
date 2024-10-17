@@ -27,5 +27,6 @@
     castShadow
   >
     <WalkingBehaviour />
+    
   </InstancedSprite>
 {/await}

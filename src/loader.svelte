@@ -1,5 +1,9 @@
-/* From Uiverse.io by NlghtM4re */ 
+<script>
+	import Glow from './glow.svelte';
+</script>
+<Glow />
 <div id="loader">
+  
    
   <div class="ls-particles ls-part-1"></div>
   <div class="ls-particles ls-part-2"></div>

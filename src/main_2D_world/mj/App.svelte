@@ -4,6 +4,7 @@
   import Settings from './Settings.svelte'
   import { OrbitControls } from '@threlte/extras'
   import { onMount } from 'svelte'
+  import { DEG2RAD } from 'three/src/math/MathUtils.js'
 
   let billboarding = true
   let fps = 1
@@ -25,15 +26,18 @@
 
 <div>
   <Canvas>
-    <T.PerspectiveCamera 
-      makeDefault
-      fov={15}
-      position.z={-80}
-      position.y={10}
-      position.x={10}
-    >
-      <OrbitControls />
-    </T.PerspectiveCamera>
+    <T.PerspectiveCamera
+    makeDefault
+    position.z={14}
+    position.y={4}
+  >
+    <OrbitControls
+      autoRotate
+      autoRotateSpeed={0.5}
+      minPolarAngle={DEG2RAD * 65}
+      maxPolarAngle={DEG2RAD * 85}
+    />
+  </T.PerspectiveCamera>
 
     <Scene {billboarding} {fps} />
   </Canvas>

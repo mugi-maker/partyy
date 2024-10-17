@@ -8,6 +8,8 @@
  -->
 
 <script lang="ts">
+   import { Text, Suspense } from '@threlte/extras'
+   import { Billboard } from '@threlte/extras'
   import { InstancedSprite, buildSpritesheet, type SpritesheetMetadata } from '@threlte/extras'
   import { AdaptedPoissonDiscSample as Sampler } from './util'
   import type { Vector3Tuple } from 'three'
@@ -16,7 +18,7 @@
 
   const treeAtlasMeta = [
     {
-      url: 'https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/jack/jack.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2phY2svamFjay5wbmciLCJpYXQiOjE3MjUwMTc5NjYsImV4cCI6MTc1NjU1Mzk2Nn0.K3F91gMPC4eV8G3ueHeJ4ze2sxkjkdrLrm9O2_sgt_w&t=2024-08-30T11%3A39%3A18.966Z',
+      url: 'https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/trees-pixelart-Recovered6.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL3RyZWVzLXBpeGVsYXJ0LVJlY292ZXJlZDYucG5nIiwiaWF0IjoxNzI4MTUyNDQ2LCJleHAiOjE3NTk2ODg0NDZ9._O3U58CHf4etwFPMsw85RUmBADN9t0q9HgCFbVyDeIk&t=2024-10-05T18%3A20%3A37.241Z',
       type: 'rowColumn',
       width: 8,
       height: 3,

@@ -1,11 +1,12 @@
 <script lang="ts">
+   import { Text, Suspense } from '@threlte/extras'
+   import { Billboard } from '@threlte/extras'
   import { T } from '@threlte/core'
   import { Sky, useTexture } from '@threlte/extras'
   import { BackSide, NearestFilter, RepeatWrapping } from 'three'
   import { DEG2RAD } from 'three/src/math/MathUtils.js'
   import TreeSpriteAtlas from './TreeSpriteAtlas.svelte'
   import DudeSprites from './DudeSprites.svelte'
-
   export let billboarding = true
   export let fps: number
 
@@ -53,6 +54,21 @@
 <!-- SCENE SETUP: grass, sky, lights -->
 
 
+<Suspense>
+  <Text
+  position.y={16}
+  color = {"red"}
+    scale.y={50}
+    scale.x={50}
+    text="I SHOW 🥩🍗"
+    characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  
+  />
+
+  <svelte:fragment slot="fallback">
+    <!-- show fallback content while font data is loading -->
+  </svelte:fragment>
+</Suspense>
 
 
 

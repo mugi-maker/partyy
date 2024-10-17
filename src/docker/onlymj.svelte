@@ -1,4 +1,4 @@
-<div class="logo"><b>@on<span>ly</span>.<span>mj</span>s</b></div>
+<div class="logo"><b>@on<span>ly</span>.<span>spe</span>edy</b></div>
 
 
 <!-- <a href="https://twitter.com/nodws" id="btn-twtr" target="_b">Follow me on Twitter</a> -->
