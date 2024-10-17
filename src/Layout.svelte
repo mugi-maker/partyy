@@ -18,7 +18,7 @@
     import Rap from './main_2D_world/bottle/rap.svelte';
     import Finger from './finger.svelte';
     import OnlyBasement from './docker/only_basement.svelte';
-  import { inject } from '@vercel/analytics'
+
   
   
   
