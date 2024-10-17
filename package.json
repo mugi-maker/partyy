@@ -42,6 +42,7 @@
     "vite": "*"
   },
   "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "all": "^0.0.0"
   }
 }

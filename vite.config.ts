@@ -5,6 +5,9 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
+  build:{
+    chunkSizeWarningLimit: 1500,
+  },
   plugins: [svelte()],
   resolve: {
     alias: {
