@@ -5,6 +5,7 @@
 	- the instanced sprite has to be updated once when initialized
 		and then, each time the atlas changes
 	- uses <Instance/> component instead of hook to set positions and frames
+ok fine
  -->
 
 <script lang="ts">
