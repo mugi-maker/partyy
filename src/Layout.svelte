@@ -18,7 +18,7 @@
     import Rap from './main_2D_world/bottle/rap.svelte';
     import Finger from './finger.svelte';
     import OnlyBasement from './docker/only_basement.svelte';
-
+  import { inject } from '@vercel/analytics'
   
   
   
@@ -71,6 +71,7 @@
   
   
   <Loader />
+  <br>
     <!-- The button to open modal -->
     <div role="alert" class="alert alert-info">
       <svg
@@ -374,10 +375,10 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&display=swap');
     .alert{
-      margin-left: 32%;
+      margin-left: 25%;
       margin-top: 10%;
       background-color: rgba(255, 208, 0, 0.299);
-      border: 5px solid #ffe101b4;
+      border: 5px solid #ff9901b4;
       box-shadow: 100px 100px 900px  #e6ff01;
       width: 500px;
       height: 500px;
