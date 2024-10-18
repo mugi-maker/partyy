@@ -18,7 +18,7 @@
 
   const treeAtlasMeta = [
     {
-      url: 'https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/trees-pixelart-Recovered6.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL3RyZWVzLXBpeGVsYXJ0LVJlY292ZXJlZDYucG5nIiwiaWF0IjoxNzI4MTUyNDQ2LCJleHAiOjE3NTk2ODg0NDZ9._O3U58CHf4etwFPMsw85RUmBADN9t0q9HgCFbVyDeIk&t=2024-10-05T18%3A20%3A37.241Z',
+      url: 'https://kljuyenllyvqfgpjnfrz.supabase.co/storage/v1/object/sign/static%20assets/ksispeed.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJzdGF0aWMgYXNzZXRzL2tzaXNwZWVkLnBuZyIsImlhdCI6MTcyOTI1NzU0NCwiZXhwIjoxNzYwNzkzNTQ0fQ.faNvYdQeWagvx7WlGo-OnfHnNoE0ONGR8zxGbsqrFAw&t=2024-10-18T13%3A19%3A02.529Z',
       type: 'rowColumn',
       width: 8,
       height: 3,
