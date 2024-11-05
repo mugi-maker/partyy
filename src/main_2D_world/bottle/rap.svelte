@@ -42,4 +42,3 @@ import { DEG2RAD } from 'three/src/math/MathUtils.js'
     height: 100%;
   }
 </style>
-s
