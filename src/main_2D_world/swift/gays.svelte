@@ -15,8 +15,10 @@
 
     <T.PerspectiveCamera
     makeDefault
-    position.z={14}
-    position.y={4}
+    position.z={104}
+    position.y={6}
+    rotation.y={400}
+    
   >
     <OrbitControls
       autoRotate
@@ -24,6 +26,7 @@
       minPolarAngle={DEG2RAD * 65}
       maxPolarAngle={DEG2RAD * 85}
     />
+  
   </T.PerspectiveCamera>
 
     <Scene
@@ -40,7 +43,8 @@
 
 <style>
   div {
+    background: rgb(13, 19, 32);
+    background: linear-gradient(180deg, rgba(13, 19, 32, 1) 0%, rgba(8, 12, 21, 1) 100%);
     height: 100%;
   }
 </style>
-s
