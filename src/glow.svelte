@@ -1,139 +1,127 @@
-
-<a href="/">
-  <div style="display: flex;">
-F - ⭐⭐⭐⭐⭐⭐ WORLD
-</a>
-
+<div class="loader">
+  <div class="loading-text">
+    Loading<span class="dot">.</span><span class="dot">.</span
+    ><span class="dot">.</span>
+  </div>
+  <div class="loading-bar-background">
+    <div class="loading-bar">
+      <div class="white-bars-container">
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+        <div class="white-bar"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
-  
-/* #container {
-padding: 2rem;
-display: flex;
-flex-direction: column;
-gap: 4rem;
-} */
-
-      .glow {
-          filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)) /* White glow */
-                  drop-shadow(0 0 10px rgba(212, 255, 0, 0.8)); /* Red glow */
-                  animation: neon1 1.5s ease-in-out infinite alternate;
-      }
-
-/*Neon*/
-a {
-text-align: center;
-font-size: 7em;
-margin-bottom: 0;
-margin-top: 0;
-line-height: 1;
-text-decoration: none;
-color: #fff;
+  /* From Uiverse.io by KSAplay */ 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
-a:nth-child(1) {
-/* font-family: Monoton; */
-animation: neon1 1.5s ease-in-out infinite alternate;
+.loading-text {
+  color: white;
+  font-size: 14pt;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
-a:nth-child(2) {
-/* font-family: Iceland; */
-animation: neon2 1.5s ease-in-out infinite alternate;
+.dot {
+  margin-left: 3px;
+  animation: blink 1.5s infinite;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
 }
 
-a:nth-child(3) {
-/* font-family: Pacifico; */
-animation: neon3 1.5s ease-in-out infinite alternate;
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
 }
 
-a:nth-child(4) {
-/* font-family: "Press Start 2P"; */
-animation: neon4 1.5s ease-in-out infinite alternate;
+.loading-bar-background {
+  --height: 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 200px;
+  height: var(--height);
+  background-color: #212121 /*change this*/;
+  box-shadow: #0c0c0c -2px 2px 4px 0px inset;
+  border-radius: calc(var(--height) / 2);
 }
 
-a:nth-child(5) {
-/* font-family: Audiowide; */
-animation: neon5 1.5s ease-in-out infinite alternate;
+.loading-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  --height: 20px;
+  width: 0%;
+  height: var(--height);
+  overflow: hidden;
+  background: rgb(222, 74, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(222, 74, 15, 1) 0%,
+    rgba(249, 199, 79, 1) 100%
+  );
+  border-radius: calc(var(--height) / 2);
+  animation: loading 4s ease-out infinite;
 }
 
-a:nth-child(6) {
-/* font-family: Vampiro One; */
-animation: neon6 1.5s ease-in-out infinite alternate;
+.white-bars-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-/*glow*/
-
-@keyframes neon1 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
-    0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
-    0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
-}
-}
-
-@keyframes neon2 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
-    0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
-    0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
-}
+.white-bar {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  width: 10px;
+  height: 45px;
+  opacity: 0.3;
+  rotate: 45deg;
 }
 
-@keyframes neon3 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
-    0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
-    0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
-}
-}
-
-@keyframes neon4 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
-    0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
-    0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
-}
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-@keyframes neon5 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
-    0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
-    0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
-}
-}
-
-@keyframes neon6 {
-from {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fbff00,
-    0 0 70px #e1ff00, 0 0 80px #ffff00, 0 0 100px #f2ff00, 0 0 150px #ffee00;
-}
-to {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(255, 230, 0),
-    0 0 35px #fbff00, 0 0 40px #eeff00, 0 0 50px #ffe600, 0 0 75px #ffe600;
-}
-}
-/*Make stuff responsive*/
-
-@media (max-width: 650px) {
-/* p {
-  font-size: 3.5em;
-} */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 </style>
