@@ -1,6 +1,6 @@
 import Loader from './Layout.svelte'
 import App from './fotter.svelte'
-// import Baby from './baby.svelte'
+import Baby from './baby.svelte'
 import Scott from './scott.svelte'
 
 
