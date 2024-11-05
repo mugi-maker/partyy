@@ -1,38 +1,199 @@
 <!DOCTYPE html>
 <html lang="en"  data-theme="dark">
   <head>
-  
     <style>
+    
+      .table{margin-top: -100px; zoom: 1;}
       body {
-    zoom: 0.4;
-}
 
+        zoom: 0.5;
+      }
+      .hidden {
+        display: none;
+      }
+   
     </style>
     
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8" /><link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F ******</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body data-theme="skeleton">
 
+          <!-- daisy uo table ⭐ -->
 
-   
- 
-    <div id="app"></div>
-    <div id="app2"></div>
-    <script type="module" src="/src/main.ts"></script>
+          <div class="overflow-x-auto">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>
+                    position
+                  </th>
+                  <th>Name</th>
+                
+                 
+                  <th>op</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                 <br>
+                <tr>
+                  <th>
+                   #1 🥇
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <!-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/K7VhxgL/464256549-1231184841461667-7048983276146220675-n.jpg" alt="464256549-1231184841461667-7048983276146220675-n" border="0"></a> -->
+                          <img
+                            src="https://i.ibb.co/K7VhxgL/464256549-1231184841461667-7048983276146220675-n.jpg"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Diddy Party</div>
+                        <div class="text-sm opacity-50">@diddyparty.babyoil</div>
+                        <progress class="progress progress-warning w-56" value="13" max="100"></progress>
+                        <div class="text-sm opacity-100 text-warning">84/124 FOLLOWERS</div>
+                      </div>
+                    </div>
+                  </td>
+                
+                  
+                  <th>
+                    <button class="btn btn-outline btn-secondary"><a href="https://www.instagram.com/diddyparty.babyoil/profilecard/?igsh=ZzI1aGs5ZzFmNnVj">Follow 
 
-    <button class="btn btn-ghost">app</button>
-    <button class="btn btn-ghost">app2</button>
-    <button class="btn btn-ghost">app3</button>
-
+                    
+                    </a></button>
+                    <button class="btn btn-secondary" onclick="showDiv('app0')">view</button>
+                  </th>
+                </tr>
+                <br>
+                <!-- row 2 -->
+                <tr>
+                  <th>
+                    #2🥈
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+<!-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/LYVXS7G/464474384-1479934422697026-727781610730901333-n.jpg" alt="464474384-1479934422697026-727781610730901333-n" border="0"></a> -->
+                          <img
+                            src="https://i.ibb.co/LYVXS7G/464474384-1479934422697026-727781610730901333-n.jpg"><img src="https://i.ibb.co/LYVXS7G/464474384-1479934422697026-727781610730901333-n.jpg" alt="Screenshot-2024-10-25-094807" border="0" /></a>"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Taylor Swift</div>
+                        <div class="text-sm opacity-50">@SWIFTIEPARTYY</div>
+                        <progress class="progress progress-warning w-56" value="40" max="100"></progress>
+                        <div class="text-sm opacity-100 text-warning">10094 FOLLOWERS</div>
+                      </div>
+                    </div>
+                  </td>
+                 
+                  <th><button class="btn btn-outline btn-secondary"><a href="https://www.instagram.com/swiftiepartyy/profilecard/?igsh=anpzbjJwZXliejlk">Follow</a></button>
+                    <button class="btn btn-secondary" onclick="showDiv('app2')">view</button>
+                  </th>
+                </tr>
+                <br>
+                <!-- row 3 -->
+                <tr>
+                  <th>
+                   #3🥉
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <!-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/7Y7qcMz/464418141-558425063403271-1790135763827932330-n.jpg" alt="464418141-558425063403271-1790135763827932330-n" border="0"></a> -->
+                          <img
+                            src="https://i.ibb.co/Pg73jWW/maxresdefault.jpg"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">I Show Speed</div>
+                        <div class="text-sm opacity-50">@ishowpartyy</div>
+                        <progress class="progress progress-warning w-56" value="40" max="100"></progress>
+                        <div class="text-sm opacity-100 text-warning">10094 FOLLOWERS</div>
+                      </div>
+                    </div>
+                  </td>
+                 
+                  <th>
+                    <button class="btn btn-outline btn-secondary"><a href="https://www.instagram.com/ishowpartyy/profilecard/?igsh=MXNkaTRneG5rdXlhMQ==">Follow</a></button>
+                    <button class="btn btn-secondary" onclick="showDiv('app')">view</button>
+                  </th>
+                </tr>
+                <br>
+                <!-- row 4 -->
+                <tr>
+                  <th>
+                   #4🚩
+                  </th>
+                  <td>
+                    <div class="flex items-center gap-3">
+                      <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                          <!-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/pjsPgW7/464055722-564498752650402-3783166520784316584-n.jpg" alt="464055722-564498752650402-3783166520784316584-n" border="0"></a> -->
+                          <img
+                            src="https://i.ibb.co/pjsPgW7/464055722-564498752650402-3783166520784316584-n.jpg"
+                            alt="Avatar Tailwind CSS Component" />
+                        </div>
+                      </div>
+                      <div>
+                        <div class="font-bold">Travis Scott</div>
+                        <div class="text-sm opacity-50">@FEIN_PARTY</div>
+                        <progress class="progress progress-warning w-56" value="40" max="100"></progress>
+                        <div class="text-sm opacity-100 text-warning">10094 FOLLOWERS</div>
+                      </div>
+                    </div>
+                  </td>
+                 
+                  <th>
+                    <button class="btn btn-outline btn-secondary"><a href="https://www.instagram.com/fein_party/profilecard/?igsh=amU5NDc0YmFrNG1m">Follow</a></button>
+                    <button class="btn btn-secondary" onclick="showDiv('app3')">view</button>
+                  </th>
+                </tr>
+              </tbody>
+              <!-- foot -->
+         
+            </table>
+          </div>
     
+         <!-- daisy uo table ⭐ -->
+         <div id="app0" class="hidden"></div>
+         <div id="app2" class="hidden"></div>
+    <div id="app" class="hidden"></div>
+
+    <div id="app3" class="hidden"></div>
+    
+    <!-- <button class="btn btn-ghost" onclick="showDiv('app')">app</button>
+    <button class="btn btn-ghost" onclick="showDiv('app2')">app2</button>
+    <button class="btn btn-ghost" onclick="showDiv('app3')">app3</button> -->
+
+    <script>
+      function showDiv(divId) {
+        // Hide all divs
+        document.getElementById('app0').classList.add('hidden');
+        document.getElementById('app').classList.add('hidden');
+        document.getElementById('app2').classList.add('hidden');
+        document.getElementById('app3').classList.add('hidden');
+        
+        // Show the selected div
+        document.getElementById(divId).classList.remove('hidden');
+      }
+    </script> 
+     <script type="module" src="/src/main.ts"></script>
   
   </body>
 </html>
