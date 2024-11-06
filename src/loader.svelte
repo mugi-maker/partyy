@@ -1,5 +1,5 @@
 <script>
-	import Glow from './glow.svelte';
+	
 </script>
 <Glow />
 <div id="loader">
